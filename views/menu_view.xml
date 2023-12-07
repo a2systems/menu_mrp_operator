@@ -1,0 +1,46 @@
+<odoo>
+
+    <menuitem
+        id="menu_mrp_operador"
+	name="Operador"
+	sequence="100"
+	groups="menu_mrp_operator.group_mrp_operator"
+    />
+
+
+    <menuitem
+        id="menu_mrp_operador_operaciones"
+	name="Operaciones"
+	sequence="100"
+	parent="menu_mrp_operador"
+    />
+
+    <menuitem
+        id="menu_mrp_operador_productos"
+	name="Productos"
+	sequence="200"
+	parent="menu_mrp_operador"
+	    />
+
+    <menuitem
+        id="menuitem_mrp_operador_productos"
+	name="Productos"
+	sequence="200"
+	    parent="menu_mrp_operador_productos"
+	    action="mrp.product_template_action"
+	    />
+
+    <menuitem
+        id="menu_mrp_operador_operaciones"
+	name="Operaciones"
+	sequence="100"
+	parent="menu_mrp_operador"
+	    />
+
+    <menuitem
+        id="menuitem_mrp_operador_operaciones"
+	name="Operacioness"
+	    parent="menu_mrp_operador_operaciones"
+	    action="mrp.mrp_production_action" />
+
+</odoo>
